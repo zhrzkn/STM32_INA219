@@ -16,5 +16,12 @@
 #define Current        0x04
 #define Calibration    0x05
 
+#define RESET          0x00
+
+#define Conf_RESET     0x399F
+
+#define BusVoltageRange_16   0x0000
+#define BusVoltageRange_32   0x2000
+
 
 #endif /* INC_INA219_REGISTER_H_ */
