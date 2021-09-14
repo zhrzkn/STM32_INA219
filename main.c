@@ -120,34 +120,6 @@ int main(void)
 	    power_mW = ina219.getPower_mW();
 	    loadvoltage = busvoltage + (shuntvoltage / 1000);
 
-/*	  	 	  if (dP!=0)
-	  	 	  {
-	  	 	      if (dP>0)
-
-	  	 	          if (dV>0)
-
-	  	 	              V = loadvoltage + 1;
-
-	  	 	          else
-	  	 	              V = loadvoltage - 1;
-
-	  	 	      else
-	  	 	          if (dV>0)
-
-	  	 	              V = loadvoltage - 1;
-
-	  	 	          else
-	  	 	              V = loadvoltage + 1;
-	  	 	  }
-
-	  	 	  else
-	  	 		V = loadvoltage;
-
-	  	 	  if (V >= V_max || V <= V_min)
-	  	 	      V = loadvoltage;
-
-	  	 	 loadvoltage = V ;
-	  	 	  P_old = power_mW ;                     */
 
      __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 60);
       HAL_Delay(200);
