@@ -121,5 +121,5 @@ void INA219_SetCalibration(INA219_t *sensor, uint16_t calibration)
 
 void INA219_SetConfiguration(INA219_t *sensor, uint16_t config)
 {
-	_Write(sensor, CONFIGURATION, config);
+	_Write(sensor, CONFIGURATION, config); 
 }
